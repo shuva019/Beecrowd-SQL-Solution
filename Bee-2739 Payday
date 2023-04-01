@@ -1,0 +1,5 @@
+select l.name, 
+       cast(
+       extract(day from l.payday) as INT
+       ) as day
+from loan l;
