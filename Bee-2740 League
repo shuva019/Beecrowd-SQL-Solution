@@ -1,0 +1,13 @@
+(
+select concat('Podium: ',l.team) 
+from league l
+where l.position in ('1','2','3')
+order by l.position
+)
+union all
+(
+select concat('Demoted: ',l.team) 
+from league l
+where l.position in ('14','15')
+order by l.position
+);
