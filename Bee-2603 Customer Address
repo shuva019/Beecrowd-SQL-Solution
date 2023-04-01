@@ -1,0 +1,3 @@
+select name, street                   --to show the result
+from customers                        --to identify the source table
+where city = 'Porto Alegre';          --the condition 
