@@ -1,0 +1,6 @@
+select pr.name 
+from products pr 
+  join providers p 
+  on pr.id_providers = p.id 
+where (pr.amount between '10' and '20') 
+      and (p.name like'P%');
