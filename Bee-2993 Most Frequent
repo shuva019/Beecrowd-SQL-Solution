@@ -1,0 +1,5 @@
+select v.amount as most_frequent_value 
+from value_table v
+group by v.amount
+order by count(v.amount) desc
+limit 1;
