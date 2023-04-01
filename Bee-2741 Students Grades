@@ -1,0 +1,4 @@
+select concat('Approved: ', s.name), s.grade
+from students s 
+where s.grade >= 7
+order by s.grade desc;
